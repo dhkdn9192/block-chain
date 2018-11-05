@@ -4,6 +4,11 @@
     docker rm -f $(docker ps -a -q)
     
     
+### active container stop
+    
+    docker stop $(docker ps -qa)    
+    
+    
 ### clear cached network
 
     docker network prune
